@@ -81,6 +81,7 @@ img {
   margin: auto;
   max-width: 700px;
   color: rgb(95, 95, 95);
+  text-align: justify;
 }
 
 .article-link {
@@ -130,7 +131,9 @@ img {
 .fuentes {
   font-size: 10px;
   text-align: center;
-  color: grey
+  color: grey;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Footer */
 .footer {

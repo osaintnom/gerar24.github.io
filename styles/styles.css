@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #005a8e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Header */
+.header {
+  background: #0769AC;
+  color: #fff;
+  padding: 12px 100%;
+  text-align: center;
+  position: fixed;
+  
+}
+
+.logo img {
+  height: 25px;
+}
+
+/* Main Content */
+.main {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 30px;
+}
+.box {
+  display:flex;
+}
+.article-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: medium;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article-subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: regular;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.article-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: light;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin: auto;
+  max-width: 700px;
+}
+
+.article-link {
+  background-color: #005a8e;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.article-link:hover {
+  background-color: #003c7c;
+}
+
+.article-figure1 {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.article-figure2 {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  min-width: 400px;
+  max-width: 700px;
+}
+
+.article-figure3 {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  min-width: 400px;
+  max-width: 700px;
+}
+.fuentes {
+  font-size: 10px;
+  text-align: center;
+  color: grey
+}
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-text {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  color: #005a8e;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+hr{
+  margin-top: 30px;
+}
+
+colorcito{
+  color:#003c7c;
+}
+segment{
+  color:#B9E2BB;
+}
+
+.conclu{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: light;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin: auto;
+  max-width: 700px;
+  margin-top: 20px;
+}

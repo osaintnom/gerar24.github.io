@@ -33,6 +33,7 @@ img {
 
 /* Header */
 .header {
+
   background: #0769AC;
   color: #fff;
   padding: 12px 100%;
@@ -72,13 +73,14 @@ img {
 }
 
 .article-text {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: light;
   line-height: 1.5;
   margin-bottom: 30px;
   margin: auto;
   max-width: 700px;
+  color: rgb(95, 95, 95);
 }
 
 .article-link {
@@ -152,6 +154,8 @@ img {
 }
 hr{
   margin-top: 30px;
+  max-width: 700px;
+  width: auto;
 }
 
 colorcito{
@@ -162,7 +166,8 @@ segment{
 }
 
 .conclu{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color:rgb(95, 95, 95);
   font-size: 16px;
   font-weight: light;
   line-height: 1.5;
@@ -171,3 +176,4 @@ segment{
   max-width: 700px;
   margin-top: 20px;
 }
+

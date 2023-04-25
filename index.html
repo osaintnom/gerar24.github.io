@@ -18,6 +18,7 @@
       <article class="article">
         <h1 class="article-title">¿Saco el Auto ó no?</h1>
         <p class="article-text">¿No estás cansado de salir con el auto y no encontrar lugar? En este artículo aprenderás los peores lugares y momentos para estar con el auto en CABA buscando donde aparcar. Llega al final para descubrir los resultados del análisis para encontrar el peor lugar y momento para estar buscando lugar en las calles de la ciudad.</p>
+        <hr>
         <div class="article-content">
           <h2 class="article-subtitle">Distribución coroplética de <colorcito>denuncias</colorcito> en la Ciudad Autónoma de Buenos Aires</h2>
           <figure class="article-figure1">
@@ -27,7 +28,7 @@
             </div>
             <p class="fuentes">Fuente: sistema-unico-de-atencion-ciudadana-2021 (Gobierno de la Ciudad) - Segmentado etapa 1</p>
           </figure>
-          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, nisi non tristique tristique, est tortor bibendum risus, vel ullamcorper justo eros sit amet elit.</p>
+          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="article-content">
           <h2 class="article-subtitle">Cantidad de <colorcito>denuncias</colorcito> hechas en Palermo según su <segment>categoría</segment></h2>
@@ -36,7 +37,7 @@
             <div id="chart2b"></div>
             <p class="fuentes">Fuente: sistema-unico-de-atencion-ciudadana-2021 (Gobierno de la Ciudad) - Segmentado etapa 2</p>
           </figure>
-          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, nisi non tristique tristique, est tortor bibendum risus, vel ullamcorper justo eros sit amet elit.</p>
+          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="article-content">
           <h2 class="article-subtitle">Variación por <segment>día de la semana y hora</segment> de las <colorcito>denuncias</colorcito> de tránsito en Palermo</h2>
@@ -46,18 +47,18 @@
               <p class="fuentes">Fuente: sistema-unico-de-atencion-ciudadana-2021 (Gobierno de la Ciudad) - Segmentado etapa 3</p>
             
           </figure>
-          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, nisi non tristique tristique, est tortor bibendum risus, vel ullamcorper justo eros sit amet elit.</p>
+          <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="conclu">
-          <p class="conclu"><colorcito>En conclusión,</colorcito> Palermo es el mayor enemigo para los conductores! Se ve claramente que de Martes a Viernes entre las 12 y 17 horas es <colorcito>IMPOSIBLE</colorcito> encontrar lugar. No saqués tu auto, usa otros medios. </p>
+          <p class="conclu"><colorcito><b>En conclusión,</b></colorcito> Palermo es el mayor enemigo para los conductores! Se ve claramente que de Martes a Viernes entre las 12 y 17 horas es <colorcito><b>IMPOSIBLE</b></colorcito> encontrar lugar. No saqués tu auto, usa otros medios. </p>
         </div>
       </article>
       <hr>
-      <div class="article-text">
-        <h2> Metodología</h2>
-        <p> Nuestra metdología se baso en un análisis del csv "sistema único de atención 2021" que contiene todas las denuncias de la Capital Federal en ese año, la fuente es el gobierno. Allí filtramos de acuerdo al barrio, categoría y hora/día de las denuncias. Esto se puede ver en las 3 etapas de nuestro proceso de análisis:
+      <div>
+        <h2 class="article-subtitle"> Metodología</h2>
+        <p class="article-text"> Nuestra metdología se baso en un análisis del csv "sistema único de atención 2021" que contiene todas las denuncias de la Capital Federal en ese año, la fuente es el gobierno. Allí filtramos de acuerdo al barrio, categoría y hora/día de las denuncias. Esto se puede ver en las 3 etapas de nuestro proceso de análisis:
         </p>
-          <ol>
+          <ol class="article-text">
             <li>En el primero se hizo la segmentación por barrio en un mapa. Para esto bastó con una agrupación por Barrio y un count.</li>
             <li>En la segunda por categoría dentro del barrio con más denuncias (Palermo). Con un filtro y juntar aquellos con cantidades poco significativas bajo la categoría de "Otros".</li>
             <li>En la tercera por hora y día dentro del barrio (Palermo) y la categoría con más denuncias (Tránsito). Construimos un nuevo csv con la cantidad de denuncias de tránsito por día de la semana y hora.</li>

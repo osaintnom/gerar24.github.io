@@ -18,9 +18,10 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
   facet: {data:data2, x: "numero_dia", marginRight: 90, label:""},
   marks: [
       Plot.frame(),
+      Plot.ruleX([6,12,18],{strokeWidth:1,stroke:"#E9EBE7"}),
       Plot.ruleY([200],{strokeWidth:8,stroke:"#001861"}),
       Plot.text(["Mín. Cantidad para Hora Pico"], {x: data2[data2.length - 19].hora, y: 205, alignX: "right", fontWeight:"bold",fill:"#001861", fontSize: 12}),
-      Plot.ruleX([3,6,9,12,15,18,21]),
+
       Plot.barY(data2, {x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': '#E9EBE7 ')}),
       // Plot.axisX({ 
       //   tickFormat: d3.utcFormat("%I%p"), 
@@ -49,6 +50,7 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
   facet: {data:data2, x: "numero_dia", marginRight: 90, label:""},
   marks: [
       Plot.frame(),
+      Plot.ruleX([6,12,18],{strokeWidth:1,stroke:"#E9EBE7"}),
       Plot.ruleY([200],{strokeWidth:8,stroke:"#001861"}),
       Plot.text(["Mín. Cantidad para Hora Pico"], {x: data2[data2.length - 20].hora, y: 205, alignX: "right", fill:"#001861",fontWeight:"bold", fontSize: 12}),
       Plot.barY(data2,{x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': '#E9EBE7 ')}),

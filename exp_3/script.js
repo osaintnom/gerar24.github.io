@@ -11,6 +11,7 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
   width: 2000,
   marginLeft: 110,
   grid: true,
+  style:{fontSize: 12},
   x: {nice: true, grid:false},
   y: {inset: 5},
   color: {type: "categorical"},
@@ -19,8 +20,8 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
       Plot.frame(),
       Plot.ruleY([200],{strokeWidth:8,stroke:"#001861"}),
       Plot.text(["Mín. Cantidad para Hora Pico"], {x: data2[data2.length - 19].hora, y: 205, alignX: "right", fontWeight:"bold",fill:"#001861", fontSize: 12}),
-
-      Plot.barY(data2, {x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': d.cantidad <60?'#44A1CA': '#B9E2BB')}),
+      Plot.ruleX([3,6,9,12,15,18,21]),
+      Plot.barY(data2, {x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': '#E9EBE7 ')}),
       // Plot.axisX({ 
       //   tickFormat: d3.utcFormat("%I%p"), 
       //   domain: [d3.utcHour.offset(d3.utcHour(), -12), d3.utcHour()
@@ -41,6 +42,7 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
   width: 2000,
   marginLeft: 110,
   grid: true,
+  style:{fontSize: 12},
   x: {nice: true, grid:false},
   y: {inset: 5},
   color: {type: "categorical"},
@@ -49,12 +51,13 @@ d3.dsv(', ','../data/fix_transito_por_hora.csv', d3.autoType).then(data => {
       Plot.frame(),
       Plot.ruleY([200],{strokeWidth:8,stroke:"#001861"}),
       Plot.text(["Mín. Cantidad para Hora Pico"], {x: data2[data2.length - 20].hora, y: 205, alignX: "right", fill:"#001861",fontWeight:"bold", fontSize: 12}),
-      Plot.barY(data2,{x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': d.cantidad <60?'#44A1CA': '#B9E2BB')}),
+      Plot.barY(data2,{x: 'hora',y:'cantidad',fill: d => (d.cantidad>=200 ? '#0769AC': '#E9EBE7 ')}),
       //Plot.line(data2,{x: 'hora',y:'cantidad',strokeWidth:6,}),
       // Plot.axisX({ 
       //   tickFormat: d3.utcFormat("%I%p"), 
       //   domain: [d3.utcHour.offset(d3.utcHour(), -12), d3.utcHour()
       //   ]fill: d => (d.hora==15 ? '#0769AC': d.hora ==3?'#44A1CA': '#B9E2BB')
+      // : d.cantidad <60?'#B9E2BB '
 
   ],
   })
